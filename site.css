@@ -243,3 +243,9 @@ footer a{text-decoration:none}
 footer a:hover{color:var(--dusk-ink)}
 .f-h{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--dusk-ink);margin-bottom:14px}
 .f-base{margin-top:44px;padding-top:22px;border-top:1px solid color-mix(in srgb,var(--dusk-ink) 14%, transparent);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* poem (hidden until the poem text is pasted in) */
+.poem{margin:0 auto;max-width:560px;text-align:center;display:grid;gap:20px;padding-block:8px}
+.poem-lines{margin:0;white-space:pre-line;font:italic 300 clamp(19px,2.2vw,22px)/1.6 var(--display);color:var(--ink)}
+.poem figcaption{font:600 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--sage)}
+.poem::before{content:"";justify-self:center;width:40px;height:1px;background:var(--glow)}

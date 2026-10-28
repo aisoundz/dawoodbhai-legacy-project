@@ -43,6 +43,14 @@ var SITE = {
   });
   $$("[data-year]").forEach(function(e){e.textContent=new Date().getFullYear();});
 
+  // Poem: show only once text has been pasted in
+  $$(".poem-lines").forEach(function(q){
+    var t=q.textContent.replace(/^\s+|\s+$/g,"");
+    var band=q.closest(".poem-band");
+    if(!t){ if(band) band.hidden=true; return; }
+    q.textContent=t;
+  });
+
   // Mobile menu
   var nav=$(".nav"), mb=$(".menu-btn");
   if(mb){mb.addEventListener("click",function(){var o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o?"true":"false");mb.textContent=o?"Close":"Menu";});}
