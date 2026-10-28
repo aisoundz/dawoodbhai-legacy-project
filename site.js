@@ -10,12 +10,12 @@ var SITE = {
 
   // December campaign
   campaignYear: 2026,
-  goal: 25000,             // dollars
+  goal: 7500,              // dollars
   raised: 0,               // update during December
   matchText: "",           // e.g. "Every gift matched up to $5,000, thanks to a generous family."
 
   // Families helped so far. Leave 0 to hide the line.
-  familiesHelped: 0,
+  familiesHelped: 11,
 
   // Names in the Remembrance Sky. Add one line per name a donor dedicates.
   remembered: [
@@ -34,7 +34,7 @@ var SITE = {
   });
   $$("[data-email]").forEach(function(e){e.textContent=SITE.email;});
   $$("[data-ein]").forEach(function(e){
-    if(!SITE.ein){e.hidden=true;return;}
+    if(!SITE.ein){e.textContent="Donations are processed securely through Donorbox, which emails you a receipt for your records.";return;}
     e.textContent="The Dawoodbhai Legacy Project is a registered 501(c)(3) nonprofit. EIN "+SITE.ein+". Gifts are tax-deductible to the extent allowed by law.";
   });
   $$("[data-families]").forEach(function(e){

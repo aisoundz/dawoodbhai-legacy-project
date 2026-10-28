@@ -108,7 +108,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var
 .pillar a{font-weight:600;font-size:14px;color:var(--sage);text-decoration:none}
 
 /* gift tiers */
-.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
 @media (max-width:900px){.tiers{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:480px){.tiers{grid-template-columns:1fr}}
 .tier{display:grid;gap:10px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;text-decoration:none;transition:border-color .2s ease, transform .2s ease}
